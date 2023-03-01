@@ -5,6 +5,10 @@ const passwordOutput = document.getElementById('password');
 // Declare length as a global variable
 var length;
 
+// Declare possibleChoices as a global variable
+var possibleChoices = [];
+var possibleChoicesString;
+
 // Write password to the password input
 function writePassword() {
 
@@ -14,7 +18,7 @@ length = Number(prompt("How many characters would you like your password to cont
 
 // Make individual prompts for lowercase//uppercase//numeric//special characters
 // If (length > 8 && length < 128)
-var possibleChoices = [];
+// var possibleChoices = [];
 var wantNums = confirm('Do you want to use numbers?');
 var wantLower = confirm('Do you want to use lowercase characters?');
 var wantUpper = confirm('Do you want uppercase characters?');
@@ -43,6 +47,8 @@ console.log(possibleChoices.join('').split(''));
 // This line converts our array into an array where each character has its own index
 possibleChoices = possibleChoices.join('').split('');
 
+possibleChoicesString = JSON.stringify(possibleChoices);
+
 // Display password
 passwordOutput.value = generatePassword();
 
@@ -55,7 +61,7 @@ function generatePassword() {
   // Utilize length in a different function
   for (var i = 0; i < length; i++) {
   // Picks a character within charSet at index of random number
-  password += possibleChoices.charAt(Math.floor(Math.random() * possibleChoices.length));
+  password += possibleChoicesString.charAt(Math.floor(Math.random() * possibleChoicesString.length));
   }
   return password;
   

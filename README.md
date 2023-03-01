@@ -40,7 +40,12 @@ A feature to copy and paste the password to the clipboard has also been included
 
 Below is an image of the user interface of the password generator as displayed to the user:
 
-![Alt text](Assets/password-generator-screenshot.png?raw=true "JavaScript Password Generator")
+![A user clicks on the button to generate a random password.](./Assets/password_generator.png)
+![A user clicks on the button to generate a random password.](./Assets/password_generator2.png)
+![A user clicks on the button to generate a random password.](./Assets/password_generator3.png)
+![A user clicks on the button to generate a random password.](./Assets/password_generator4.png)
+![A user clicks on the button to generate a random password.](./Assets/password_generator5.png)
+![A user clicks on the button to generate a random password.](./Assets/password_generator6.png)
 
 URL to deployed game:
 https://kaitlynatif.github.io/Password_Generator/
